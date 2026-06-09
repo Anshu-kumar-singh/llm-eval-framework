@@ -1,4 +1,3 @@
-```markdown
 # LLM Evaluation Framework
 
 Automated benchmarking system that runs 25 medical QA questions through 3 LLMs simultaneously, scores every answer using an LLM-as-judge approach, and displays results on an interactive Streamlit dashboard.
@@ -15,7 +14,7 @@ Automated benchmarking system that runs 25 medical QA questions through 3 LLMs s
      └──► qwen3-32b      ──► Answer + latency + tokens
                                        │
                               LLM-as-judge scoring
-                              (faithfulness · relevancy · correctness)
+                           (faithfulness · relevancy · correctness)
                                        │
                                eval_results.csv
                                        │
@@ -152,4 +151,3 @@ RAGAS is the standard library for RAG evaluation but has dependency conflicts wi
 - Implemented LLM-as-judge scoring pipeline measuring faithfulness, answer relevancy, and correctness using Groq API (zero cost)
 - Tracked latency and token usage per model across 75 API calls; identified LLaMA-3.3-70B as 3x faster than LLaMA-3.1-8B at comparable quality
 - Deployed interactive Streamlit dashboard with bar charts, radar plot, latency-vs-correctness scatter, and per-question drill-down
-```
