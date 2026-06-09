@@ -1,0 +1,310 @@
+model,question,answer,faithfulness,relevancy,correctness,latency_sec,tokens_used
+llama-3.1-8b,What is type 2 diabetes?,"Type 2 diabetes is a metabolic disease where cells are resistant to insulin or don't produce enough insulin, resulting in high blood glucose levels.",1.0,1.0,0.9,0.399,116
+llama-3.1-8b,What are symptoms of hypertension?,"Symptoms of hypertension (high blood pressure) may include: 
+
+1. Headaches
+2. Shortness of breath
+3. Nosebleeds",1.0,1.0,1.0,0.271,126
+llama-3.1-8b,How does ibuprofen work?,"Ibuprofen works by inhibiting the cyclooxygenase (COX-1 and COX-2) enzymes, which reduces the production of prostaglandins and thus decreases inflammation, pain, and fever.",1.0,1.0,1.0,0.201,151
+llama-3.1-8b,What is BMI and what does it measure?,"BMI (Body Mass Index) is a calculation of a person's weight in kilograms divided by their height in meters squared. It measures an individual's body mass relative to their height, allowing for classification into weight categories such as underweight, normal weight, overweight, or obese.",1.0,1.0,0.9,0.358,151
+llama-3.1-8b,What causes a heart attack?,"A blood clot forms over atherosclerotic plaque in a coronary artery, which typically causes a heart attack.",1.0,1.0,1.0,0.183,119
+llama-3.1-8b,What is the difference between bacteria and viruses?,"Bacteria are single-celled microorganisms that can reproduce independently, whereas viruses are non-living agents consisting of genetic material in a protein coat that require host cells to replicate.",1.0,1.0,0.8,0.512,131
+llama-3.1-8b,What is anemia?,"Anemia is a condition where the blood doesn't have enough healthy red blood cells or hemoglobin to carry adequate oxygen to the body's tissues, causing fatigue and weakness.",1.0,1.0,1.0,0.206,122
+llama-3.1-8b,How does the immune system fight infection?,"The immune system fights infection by producing white blood cells, specifically B cells that produce antibodies, and memory cells that aid in faster future responses, helping to detect and destroy pathogens.",0.9,1.0,0.9,0.203,129
+llama-3.1-8b,What is cholesterol and why does it matter?,"Cholesterol is a waxy, fat-like substance in the blood. It matters because an imbalance of cholesterol types (LDL or HDL) affects cardiovascular health - high LDL builds up in artery walls, while high HDL helps remove LDL, reducing cardiovascular disease risk.",0.9,1.0,0.9,0.213,156
+llama-3.1-8b,What is asthma?,"Asthma is a chronic lung disease characterized by inflammation and narrowing of the airways, causing respiratory symptoms.",1.0,1.0,0.8,0.28,112
+llama-3.1-8b,What does the liver do?,"The liver performs over 500 vital functions, including:
+
+- Filtering toxins from blood
+- Producing bile for digestion
+- Metabolizing carbohydrates, proteins, and fats
+- Synthesizing blood clotting proteins",1.0,1.0,0.8,0.257,135
+llama-3.1-8b,What is osteoporosis?,"Osteoporosis is a skeletal disorder where bones become porous and fragile, decreasing bone mineral density and significantly increasing fracture risk.",1.0,1.0,0.9,0.158,117
+llama-3.1-8b,How does the kidney regulate blood pressure?,"The kidney regulates blood pressure by adjusting fluid and sodium levels in the body and releasing renin, which activates the RAAS to constrict blood vessels and retain sodium, ultimately increasing blood pressure when needed.",1.0,1.0,0.9,0.319,146
+llama-3.1-8b,What is a stroke?,"A stroke is an interruption of blood supply to part of the brain, either due to a blockage (ischemic stroke) or bleeding (hemorrhagic stroke), resulting in brain cell death.",1.0,1.0,1.0,0.281,136
+llama-3.1-8b,What is insulin resistance?,"Insulin resistance is a condition where muscle, fat, and liver cells don't respond properly to insulin.",1.0,1.0,0.9,0.197,117
+llama-3.1-8b,What causes kidney stones?,"Kidney stones form when minerals like calcium, oxalate, or uric acid become concentrated in urine and crystallize.",1.0,1.0,1.0,2.33,122
+llama-3.1-8b,What is the function of the thyroid gland?,The function of the thyroid gland is to produce hormones (T3 and T4) that regulate the body's metabolic rate and various bodily functions.,1.0,1.0,0.9,2.395,133
+llama-3.1-8b,What is pneumonia?,"Pneumonia is an infection that inflames the air sacs in the lungs, causing them to fill with fluid or pus.",1.0,1.0,0.9,2.385,129
+llama-3.1-8b,How does sleep affect health?,"Sleep is critical for immune system function, memory consolidation, hormone regulation, tissue repair, and cardiovascular health. Adequate sleep maintains overall well-being.",0.9,1.0,0.9,2.385,115
+llama-3.1-8b,What is the difference between Type 1 and Type 2 diabetes?,"Type 1 diabetes is an autoimmune disease causing the immune system to destroy insulin-producing beta cells. 
+Type 2 diabetes is a gradual development of insulin resistance, often linked to lifestyle factors, where cells become less responsive to insulin.",1.0,1.0,0.8,2.267,147
+llama-3.1-8b,What is a CT scan used for?,"A CT scan is used to detect tumors, internal injuries, infections, and vascular conditions, by creating detailed cross-sectional images of the body.",1.0,1.0,0.8,2.431,124
+llama-3.1-8b,What causes high cholesterol?,"High cholesterol is caused by a combination of the following factors: 
+
+1. Diet (saturated and trans fats)
+2. Lack of physical activity
+3. Obesity
+4. Smoking
+5. Genetic predisposition",1.0,1.0,0.8,2.29,137
+llama-3.1-8b,What is the role of platelets in blood?,Platelets play a crucial role in forming blood clots to stop bleeding when a blood vessel is damaged.,1.0,1.0,1.0,2.272,127
+llama-3.1-8b,What is Alzheimer's disease?,Alzheimer's disease is a progressive neurodegenerative disorder that destroys memory and cognitive function.,1.0,1.0,0.9,2.311,112
+llama-3.1-8b,What are probiotics?,"Probiotics are live microorganisms, mainly bacteria, that provide health benefits when consumed in adequate amounts.",0.9,1.0,0.9,2.237,115
+llama-3.3-70b,What is type 2 diabetes?,"Type 2 diabetes is a metabolic disease where cells become resistant to insulin or the pancreas doesn't produce enough insulin, resulting in elevated blood glucose levels.",1.0,1.0,0.9,0.37,119
+llama-3.3-70b,What are symptoms of hypertension?,"Headaches, shortness of breath, or nosebleeds.",1.0,1.0,0.8,0.271,109
+llama-3.3-70b,How does ibuprofen work?,"Ibuprofen works by inhibiting cyclooxygenase (COX-1 and COX-2) enzymes, which reduces the production of prostaglandins, thereby reducing inflammation, pain, and fever.",1.0,1.0,1.0,0.319,150
+llama-3.3-70b,What is BMI and what does it measure?,"BMI (Body Mass Index) measures weight in relation to height, classifying individuals as underweight, normal weight, overweight, or obese.",0.8,1.0,0.8,0.328,124
+llama-3.3-70b,What causes a heart attack?,"A heart attack is caused by a blood clot forming over atherosclerotic plaque in a coronary artery, which becomes blocked and deprives the heart muscle of oxygen.",1.0,1.0,1.0,0.25,130
+llama-3.3-70b,What is the difference between bacteria and viruses?,"The main difference is that bacteria are living cells that can reproduce independently, while viruses are non-living agents that must invade host cells to replicate.",1.0,1.0,0.8,0.226,125
+llama-3.3-70b,What is anemia?,Anemia is a condition where the blood lacks enough healthy red blood cells or hemoglobin to carry adequate oxygen to the body's tissues.,1.0,1.0,1.0,0.484,115
+llama-3.3-70b,How does the immune system fight infection?,"The immune system fights infection using white blood cells. B cells produce antibodies to neutralize specific threats, and memory cells retain information about past infections for faster future responses.",1.0,1.0,1.0,0.314,127
+llama-3.3-70b,What is cholesterol and why does it matter?,"Cholesterol is a waxy, fat-like substance in the blood. It matters because high levels of bad (LDL) cholesterol can increase cardiovascular disease risk, while good (HDL) cholesterol helps remove bad cholesterol from the bloodstream.",1.0,1.0,0.9,0.346,149
+llama-3.3-70b,What is asthma?,Asthma is a chronic lung disease characterized by inflammation and narrowing of the airways.,1.0,1.0,0.9,0.272,108
+llama-3.3-70b,What does the liver do?,"The liver performs over 500 vital functions including filtering toxins, producing bile, metabolizing nutrients, and synthesizing blood clotting proteins.",1.0,1.0,0.9,0.194,119
+llama-3.3-70b,What is osteoporosis?,Osteoporosis is a skeletal disorder where bones become porous and fragile due to decreased bone mineral density.,1.0,1.0,1.0,0.185,113
+llama-3.3-70b,How does the kidney regulate blood pressure?,"The kidney regulates blood pressure by adjusting fluid and sodium levels, and releasing renin to activate the renin-angiotensin-aldosterone system (RAAS), constricting blood vessels and retaining sodium.",1.0,1.0,0.9,0.26,149
+llama-3.3-70b,What is a stroke?,"A stroke occurs when blood supply to part of the brain is interrupted, causing brain cell death.",1.0,1.0,0.8,0.28,115
+llama-3.3-70b,What is insulin resistance?,"Insulin resistance is a condition where muscle, fat, and liver cells do not respond properly to insulin.",1.0,1.0,0.9,0.449,117
+llama-3.3-70b,What causes kidney stones?,"Minerals like calcium, oxalate, or uric acid becoming concentrated in urine and crystallizing.",1.0,1.0,0.9,0.296,118
+llama-3.3-70b,What is the function of the thyroid gland?,"The thyroid gland produces hormones that regulate the body's metabolic rate, heart function, digestion, muscle control, brain development, and bone maintenance.",1.0,1.0,0.9,0.3,132
+llama-3.3-70b,What is pneumonia?,Pneumonia is an infection that inflames the air sacs in one or both lungs.,1.0,1.0,0.8,0.293,122
+llama-3.3-70b,How does sleep affect health?,"Sleep affects health by supporting immune system function, memory consolidation, hormone regulation, tissue repair, and maintaining cardiovascular health.",1.0,1.0,1.0,0.28,109
+llama-3.3-70b,What is the difference between Type 1 and Type 2 diabetes?,"Type 1 diabetes is an autoimmune disease where the immune system destroys insulin-producing cells, whereas Type 2 diabetes develops when cells become resistant to insulin, often due to lifestyle factors.",0.9,1.0,0.8,0.371,137
+llama-3.3-70b,What is a CT scan used for?,"A CT scan is used for detecting tumors, internal injuries, infections, and vascular conditions.",1.0,1.0,0.8,0.3,114
+llama-3.3-70b,What causes high cholesterol?,"High cholesterol is caused by a combination of diet, lack of physical activity, obesity, smoking, genetic predisposition, certain medical conditions, and some medications.",0.9,1.0,0.8,0.437,125
+llama-3.3-70b,What is the role of platelets in blood?,The role of platelets in blood is to help the body form clots to stop bleeding.,1.0,1.0,1.0,0.297,125
+llama-3.3-70b,What is Alzheimer's disease?,Alzheimer's disease is a progressive neurodegenerative disorder that destroys memory and cognitive function.,1.0,1.0,0.9,0.284,112
+llama-3.3-70b,What are probiotics?,"Probiotics are live microorganisms, mainly bacteria, that confer health benefits when consumed in adequate amounts.",0.9,1.0,0.9,0.282,115
+qwen3-32b,What is type 2 diabetes?,"<think>
+Okay, the user is asking ""What is type 2 diabetes?"" and I need to answer using the provided context. Let me look at the context again.
+
+The context says: Type 2 diabetes is a metabolic disease where cells become resistant to insulin or the pancreas doesn't produce enough insulin, leading to high blood glucose levels. 
+
+I need to make sure my answer includes both key points: insulin resistance and insufficient insulin production. Also, mention elevated blood glucose. The user wants a concise answer, so I should avoid extra details. Let me check if there's any other info needed. The answer should be a direct summary of the context without adding anything else. Maybe start with ""Type 2 diabetes is..."" to be clear. Make sure to mention both causes: cells resisting insulin or pancreas not making enough. Then state the result: elevated blood glucose levels. Keep it short and precise. Alright, that should cover it.
+</think>
+
+Type 2 diabetes is a metabolic disease characterized by insulin resistance in cells or insufficient insulin production by the pancreas, leading to elevated blood glucose levels.",1.0,1.0,0.9,0.583,288
+qwen3-32b,What are symptoms of hypertension?,"<think>
+Okay, so the user is asking about the symptoms of hypertension. Let me check the context they provided.
+
+The context says hypertension is called the silent killer because most people don't have symptoms. But when they do appear, the symptoms include headaches, shortness of breath, or nosebleeds. 
+
+I need to make sure I answer based only on that info. They want a concise answer, just using the context. So the main point is that there are usually no symptoms, but when there are, those three are mentioned. I should start by stating that most people don't show symptoms, then list the possible ones. Let me avoid adding anything else not in the context. Maybe the user is looking to understand what to watch for, but they need the answer strictly from the provided text. Double-check the context for any other details, but it seems straightforward. Alright, I'll structure the answer accordingly.
+</think>
+
+Hypertension often shows no symptoms, but when present, they may include headaches, shortness of breath, or nosebleeds.",1.0,1.0,0.8,0.627,288
+qwen3-32b,How does ibuprofen work?,"<think>
+Okay, how does ibuprofen work? Let me start by recalling what I know about ibuprofen. It's a nonsteroidal anti-inflammatory drug (NSAID), right? NSAIDs are a class of medications that include drugs like aspirin and naproxen, which are used for pain, inflammation, and fever.
+
+The context given says that ibuprofen inhibits cyclooxygenase enzymes, COX-1 and COX-2. Prostaglandins are involved in inflammation, pain, and fever. So, by inhibiting COX enzymes, ibuprofen must reduce the production of prostaglandins. That makes sense because prostaglandins are known to be mediators of those symptoms.
+
+Wait, COX enzymes have two isoforms: COX-1 and COX-2. COX-1 is more involved in protecting the stomach lining and other normal body functions, while COX-2 is induced during inflammation. So, inhibiting COX-2 would help with reducing inflammation, pain, and fever, but inhibiting COX-1 could lead to side effects like gastrointestinal issues. I guess ibuprofen affects both, but maybe it's a non-selective inhibitor. That's why it's important to note which enzymes it inhibits.
+
+So putting it all together: ibuprofen works by blocking COX-1 and COX-2 enzymes, which in turn reduces prostaglandin production. Lower prostaglandins mean less inflammation, pain, and fever. The answer should mention NSAID, inhibition of COX enzymes, reduction of prostaglandins, and the resulting effects on inflammation, pain, and fever. Maybe also mention it's a non-selective COX inhibitor since it affects both COX-1 and COX-2. But the question is straightforward, so keep it concise. The user probably wants the key points without too much detail. Just restate the context in a clear, concise manner.
+</think>
+
+Ibuprofen works by inhibiting cyclooxygenase (COX-1 and COX-2) enzymes, which reduces the production of prostaglandins. Lower prostaglandin levels decrease inflammation, pain, and fever.",0.9,1.0,0.9,1.138,539
+qwen3-32b,What is BMI and what does it measure?,"<think>
+Okay, I need to answer what BMI is and what it measures. Let me start by recalling the context given.
+
+The context says BMI is calculated as weight in kilograms divided by height in meters squared. It classifies people into categories like underweight, normal, overweight, obese. So, the user is asking for a concise answer based on that info.
+
+First, define BMI. It's Body Mass Index. Then explain the formula: weight over height squared. Mention that it's used to classify into those categories. Need to keep it short. Avoid adding extra info not in the context. Let me check the original question again to make sure.
+
+Yes, the answer should only use the provided context. So, I should state the formula and the purpose of classifying into the four categories. Don't mention anything else like limitations of BMI or other factors, since that's not in the given context. Keep it simple and accurate.
+</think>
+
+BMI (Body Mass Index) is a measure calculated as weight in kilograms divided by height in meters squared. It is used to classify individuals into categories: underweight, normal weight, overweight, or obese.",1.0,1.0,0.9,0.768,305
+qwen3-32b,What causes a heart attack?,"<think>
+Okay, the user asked, ""What causes a heart attack?"" and provided the context that a myocardial infarction occurs when a coronary artery is blocked, usually by a blood clot over atherosclerotic plaque, leading to oxygen deprivation in the heart muscle.
+
+First, I need to make sure I understand the context correctly. The main cause mentioned here is a blockage in the coronary artery. The blockage is typically from a blood clot forming on atherosclerotic plaque. Atherosclerosis is the buildup of fats, cholesterol, and other substances in the artery walls. When a clot forms over this plaque, it blocks blood flow, causing a heart attack. 
+
+Now, the user wants a concise answer using only the provided context. They might be someone looking for a straightforward explanation, maybe a student studying for a test or someone concerned about heart health. They might need the answer for a quiz, a project, or personal knowledge. The answer should not include extra information beyond what's given. 
+
+So, the key points are: blockage in a coronary artery, cause of blockage is a blood clot over atherosclerotic plaque, and the result is oxygen deprivation to the heart muscle. Need to phrase this in a clear, concise sentence. Avoid medical jargon where possible, but the terms like atherosclerotic plaque are necessary here because they're part of the context provided.
+
+Let me check if there's anything else in the context. The context says ""blocked, typically due to a blood clot forming over atherosclerotic plaque."" So the main causes listed are the clot and the plaque. Need to make sure the answer reflects that. 
+
+The answer should directly address the cause, so something like: A heart attack is caused by a blockage in a coronary artery, usually from a blood clot forming over atherosclerotic plaque, which cuts off oxygen supply to the heart muscle. That's concise and includes all the key elements from the context. I don't see any other factors mentioned in the context, like other causes of blockage, so no need to add those. The user might not want extra info they didn't provide.
+</think>
+
+A heart attack (myocardial infarction) is caused by a blockage in a coronary artery, typically due to a **blood clot forming over atherosclerotic plaque**, which restricts oxygen supply to the heart muscle.",1.0,1.0,0.9,1.42,567
+qwen3-32b,What is the difference between bacteria and viruses?,"<think>
+Okay, the user is asking about the difference between bacteria and viruses. Let me start by recalling the context provided. Bacteria are single-celled organisms that can reproduce on their own. They're living, right? They have their own cellular structures and can grow and divide independently. Viruses, on the other hand, are non-living. They consist of genetic material surrounded by a protein coat, and they can't replicate without invading a host cell.
+
+Wait, so the key points are: bacteria are living, single-celled, and self-reproducing. Viruses aren't living, require a host to replicate. I should make sure to highlight their structural differences too. Bacteria have cellular components like cell walls, ribosomes, etc., while viruses just have genetic material and a protein coat. Also, their methods of replication differ. Bacteria reproduce through cell division, viruses take over host cells' machinery.
+
+Another thing to consider is treatment. Antibiotics target bacteria but don't work on viruses. That's a practical difference in managing infections. But the context doesn't mention treatment, just the structure and reproduction aspects. I should stick to the provided context.
+
+So the answer should clearly state the main differences: living vs. non-living, cellular structure vs. genetic material in a coat, and independent reproduction vs. host-dependent replication. Need to keep it concise, using the points from the context. Let me put that together succinctly.
+</think>
+
+Bacteria are single-celled, living organisms that replicate independently. Viruses are non-living, genetic material (DNA/RNA) enclosed in a protein coating, requiring host cells to replicate.",0.9,1.0,0.8,0.962,408
+qwen3-32b,What is anemia?,"<think>
+Okay, so the user is asking, ""What is anemia?"" Let me check the context provided. The context says that anemia is a condition where the blood doesn't have enough healthy red blood cells or hemoglobin, leading to insufficient oxygen delivery to tissues, which causes fatigue and weakness.
+
+I need to make sure I answer concisely using only the provided context. The user probably wants a straightforward definition without extra information. Let me break down the key points from the context: low red blood cells or hemoglobin, inadequate oxygen delivery, symptoms like fatigue and weakness.
+
+I should structure the answer to first define anemia, mention the lack of red blood cells or hemoglobin, and then the effects on the body. Avoid adding any other details not in the context. Maybe start with ""Anemia is a condition..."" and then list the main points. Let me check for any jargon or complex terms. Hemoglobin is probably a good term to include since it's in the context. Keep it simple. Alright, that should cover it.
+</think>
+
+Anemia is a condition where the blood lacks sufficient healthy red blood cells or hemoglobin to deliver adequate oxygen to tissues, leading to fatigue and weakness.",1.0,1.0,0.9,0.643,310
+qwen3-32b,How does the immune system fight infection?,"<think>
+Okay, the user is asking how the immune system fights infection. Let me check the context provided.
+
+The context mentions white blood cells, B cells producing antibodies, and memory cells. So I need to make sure the answer includes those elements. Let me start by stating that the immune system uses white blood cells. Then, explain B cells make antibodies to neutralize pathogens. Also, mention memory cells for future responses. Keep it concise and stick to the context. Don't add extra info. Maybe structure it in two parts: immediate response with B cells and antibodies, then memory cells for long-term. Make sure the answer is clear and straightforward without jargon. Let me put that together.
+</think>
+
+The immune system fights infection by using white blood cells to detect and destroy pathogens. B cells produce antibodies to neutralize specific threats, and memory cells remember past infections to enable faster, more effective responses in the future.",1.0,1.0,0.9,1.072,257
+qwen3-32b,What is cholesterol and why does it matter?,"<think>
+Okay, so the user is asking about cholesterol and why it's important. Let me start by breaking down the question. They want to know what cholesterol is and its significance.
+
+From the provided context, cholesterol is described as a waxy, fat-like substance in the blood. There's also info on LDL and HDL. LDL is the bad one that builds up in arteries, leading to cardiovascular issues. HDL is good because it removes LDL.
+
+I need to answer concisely using only that context. The answer should mention both types of cholesterol: LDL's role in building up arteries and HDL's protective role. Also, the importance is related to cardiovascular disease risk.
+
+Wait, the user might be looking for a basic understanding without medical jargon. Maybe explain it in simple terms. But the context uses terms like LDL and HDL, so sticking with those is okay since the answer is based on that context. Also, ensure the answer is brief, just as the user requested.
+
+Let me structure it: first define cholesterol, then explain LDL and HDL, and conclude with why the balance matters for health. Need to make sure it's concise but covers all the key points from the context. Double-check that I'm not adding any extra information beyond the provided context.
+</think>
+
+Cholesterol is a waxy substance in the blood. LDL (""bad"") cholesterol can build up in arteries, raising cardiovascular disease risk, while HDL (""good"") cholesterol helps remove LDL. Balancing these types is critical for heart health.",0.9,1.0,0.9,1.128,389
+qwen3-32b,What is asthma?,"<think>
+Okay, the user is asking ""What is asthma?"" and I need to use the provided context to answer concisely. Let me check the context again.
+
+The context says asthma is a chronic lung disease with inflammation and narrowed airways, leading to wheezing, breathlessness, chest tightness, and coughing. I need to make sure my answer includes all those elements without adding extra info. Let me structure it clearly: start with the definition, mention the main features (inflammation and narrowing), and list the symptoms. Keep it straightforward and use simple terms. Let me put that together in a sentence or two.
+</think>
+
+Asthma is a chronic lung disease marked by airway inflammation and narrowing, causing recurring symptoms like wheezing, breathlessness, chest tightness, and coughing.",0.9,1.0,0.9,0.458,234
+qwen3-32b,What does the liver do?,"<think>
+Okay, the user is asking ""What does the liver do?"" and I need to answer based on the provided context. Let me check the context again. It says the liver has over 500 functions, including filtering toxins, producing bile, metabolizing carbs, proteins, fats, and making blood clotting proteins.
+
+So I need to list these functions concisely. The answer should include all the main points from the context without adding extra info. Let me make sure I don't miss any key points. The answer should mention filtering toxins from blood, producing bile for digestion, metabolizing the three macronutrients, and synthesizing blood clotting proteins. Also, mention the over 500 functions part. Maybe start with the main point about the number of functions and then list the key ones. Keep it short and clear. Let me structure that.
+</think>
+
+The liver performs over 500 vital functions, including:  
+1. Filtering toxins from blood.  
+2. Producing bile for digestion.  
+3. Metabolizing carbohydrates, proteins, and fats.  
+4. Synthesizing blood clotting proteins.",1.0,1.0,0.8,0.955,306
+qwen3-32b,What is osteoporosis?,"<think>
+Okay, the user is asking ""What is osteoporosis?"" and there's a context provided. Let me check the context first. The context says it's a skeletal disorder where bones become porous and fragile due to decreased bone mineral density, increasing fracture risk in hip, spine, and wrist.
+
+I need to answer concisely using only the provided context. The user wants a straightforward answer without extra information. Let me break down the key points from the context: skeletal disorder, porous and fragile bones, decreased bone mineral density, and increased fracture risk in specific areas.
+
+I should structure the answer to include all those elements in a clear, concise manner. Avoid using technical jargon beyond what's provided. Make sure not to add any information outside the context. Let me phrase it as a definition, starting with ""Osteoporosis is..."" and then list the key points. Check for any redundancy or unnecessary words. Make sure the answer is complete but to the point. Alright, that should cover it.
+</think>
+
+Osteoporosis is a skeletal disorder characterized by porous, fragile bones due to reduced bone mineral density, significantly increasing the risk of fractures, especially in the hip, spine, and wrist.",1.0,1.0,0.9,1.277,314
+qwen3-32b,How does the kidney regulate blood pressure?,"<think>
+Okay, the user is asking how the kidney regulates blood pressure. Let me recall the context provided.
+
+The context says that kidneys regulate blood pressure by adjusting fluid and sodium levels. They also release renin, which activates the RAAS. RAAS causes blood vessel constriction and sodium retention. 
+
+I need to break this down. First, the kidneys control fluid levels, which affects blood volume. More fluid means higher blood pressure. Sodium retention also plays a role because retaining sodium increases the amount of water the body holds. 
+
+Then there's renin. Renin is an enzyme that starts the RAAS system. When released, renin leads to the production of angiotensin, which causes blood vessels to constrict, increasing pressure. Aldosterone is part of this too, making the kidneys retain more sodium and water. 
+
+Wait, the user wants a concise answer. So I should mention both the fluid/sodium adjustment and the renin release triggering RAAS. Also, the effects of RAAS on vessels and sodium retention. Need to make sure it's clear and not too detailed. 
+
+Let me check if I missed anything. The main points are adjusting fluid and sodium levels, releasing renin, and the RAAS system's role in vessel constriction and sodium retention. Yes, that's all covered. Keep it straightforward.
+</think>
+
+The kidneys regulate blood pressure by adjusting fluid and sodium levels, which affects blood volume. They also release renin, which activates the RAAS system to constrict blood vessels and retain sodium, further increasing blood pressure.",0.9,1.0,0.9,0.93,400
+qwen3-32b,What is a stroke?,"<think>
+Okay, the user is asking, ""What is a stroke?"" Let me look at the provided context. It says a stroke occurs when blood supply to part of the brain is interrupted. Then it differentiates between ischemic strokes caused by blockages and hemorrhagic strokes caused by bleeding in the brain. Both types lead to brain cell death.
+
+So I need to answer concisely, using only this context. The answer should mention the interruption of blood supply and the two main types, ischemic and hemorrhagic. Also, note that both result in brain cell death. But the user wants the answer to be as concise as possible, so I should summarize that without adding extra details. Let me make sure I don't include anything beyond the context provided. Maybe start with the definition, then mention the two causes, and the outcome. Keep it straightforward.
+</think>
+
+A stroke occurs when blood supply to part of the brain is interrupted, leading to brain cell death. It has two main types: ischemic (caused by blockages) and hemorrhagic (caused by brain bleeding).",1.0,1.0,0.9,0.8,294
+qwen3-32b,What is insulin resistance?,"<think>
+Okay, so the user is asking, ""What is insulin resistance?"" Let me check the provided context. The context says that insulin resistance is when muscle, fat, and liver cells don't respond properly to insulin. The pancreas then makes more insulin to compensate, which can lead to type 2 diabetes.
+
+I need to answer concisely using only this context. Let me break it down. First, define insulin resistance as the condition where certain cells don't respond well to insulin. Then mention the body's response: the pancreas produces more insulin. Finally, note the potential consequence, which is type 2 diabetes. Make sure to keep it brief and stick to the info given. Avoid adding any extra information beyond what's in the context. Let me put that together into a clear, concise answer.
+</think>
+
+Insulin resistance is a condition where muscle, fat, and liver cells fail to respond properly to insulin, prompting the pancreas to produce more insulin. This can eventually lead to type 2 diabetes.",1.0,1.0,0.9,0.756,281
+qwen3-32b,What causes kidney stones?,"<think>
+Okay, the user is asking what causes kidney stones. Let me look at the context provided. The context says kidney stones form when minerals like calcium, oxalate, or uric acid become concentrated in urine and crystallize. The risk factors mentioned are dehydration, high-sodium diet, obesity, and certain medical conditions.
+
+So, the main cause here is the concentration of these minerals leading to crystallization. I need to explain that the direct cause is the minerals crystallizing when urine is too concentrated. Then list the risk factors as contributing reasons. I should make sure to mention the specific minerals and the main risk factors without adding extra info beyond the context. Keep it concise, maybe separate the causes and risk factors clearly. Let me check if the answer is accurate based on the given context. Yep, that covers it. Now structure the answer to be clear and to the point using the context provided.
+</think>
+
+Kidney stones are caused by the crystallization of minerals (e.g., calcium, oxalate, uric acid) in concentrated urine. Risk factors include dehydration, high-sodium diet, obesity, and certain medical conditions.",1.0,1.0,0.9,0.689,306
+qwen3-32b,What is the function of the thyroid gland?,"<think>
+Okay, I need to answer the question ""What is the function of the thyroid gland?"" based on the given context. Let me start by reading the context carefully. The context states that the thyroid produces T3 and T4, which regulate metabolic rate, heart function, digestion, muscle control, brain development, and bone maintenance.
+
+So the main function here is producing these hormones. But the question is about the thyroid gland's function, not just the hormones. The answer should list the functions attributed to the thyroid gland by the context. The context mentions several body functions regulated by the hormones. Therefore, the thyroid gland's function is to produce hormones that regulate those listed processes.
+
+I need to make sure I'm not adding extra information beyond the context. Let me check the context again. Yes, the thyroid produces T3 and T4, which regulate all those body aspects. The answer should mention producing T3 and T4 and then list the functions they regulate. Conciseness is important here. The user wants a concise answer using only the provided context.
+
+So the answer should be structured as: The thyroid gland produces T3 and T4, which regulate [list the functions]. Let me list the functions as per the context: metabolic rate, heart function, digestion, muscle control, brain development, and bone maintenance. Make sure to separate them properly and use commas. Also, check for any typos. Alright, that should cover it.
+</think>
+
+The thyroid gland produces triiodothyronine (T3) and thyroxine (T4), which regulate metabolic rate, heart function, digestion, muscle control, brain development, and bone maintenance.",1.0,1.0,0.9,0.792,417
+qwen3-32b,What is pneumonia?,"<think>
+Okay, the user is asking, ""What is pneumonia?"" and I need to answer based on the provided context. Let me look at the context again. It says pneumonia is an infection that inflames the air sacs (alveoli) in one or both lungs. The air sacs may fill with fluid or pus, leading to symptoms like cough, fever, chills, and difficulty breathing.
+
+So, I need to define pneumonia succinctly. Start with the main point: infection causing inflammation of air sacs in the lungs. Then mention where it affects—both lungs possibly. Then the effect, which is fluid or pus in the air sacs. Finally, list the key symptoms. Make sure the answer is concise, using the exact terms from the context. Check if I need to explain terms like alveoli, but since the context uses it, maybe it's okay. User might be a student or someone seeking basic info. Avoid medical jargon beyond what's provided. Keep it straightforward.
+</think>
+
+Pneumonia is an infection that causes inflammation of the air sacs (alveoli) in the lungs, leading to symptoms such as cough, fever, chills, and difficulty breathing as the alveoli may fill with fluid or pus.",0.9,1.0,0.9,0.96,340
+qwen3-32b,How does sleep affect health?,"<think>
+Okay, the user is asking how sleep affects health. Let me look at the context provided. The context lists several functions: immune system, memory consolidation, hormone regulation (cortisol and growth hormone), tissue repair, and cardiovascular health.
+
+So I need to connect sleep to these health aspects. Let me break down each point. First, sleep helps the immune system function properly. Without enough sleep, the body might not fight off infections as well. Then, memory consolidation happens during sleep, so lack of sleep could impair learning and memory. Hormones like cortisol (stress hormone) and growth hormone are regulated during sleep. Disrupted sleep might lead to higher cortisol, affecting stress levels, and lower growth hormone which is important for growth and tissue repair. Tissue repair happens during sleep, so if you're not sleeping enough, your body can't repair itself properly. Cardiovascular health is also tied to sleep; poor sleep is linked to heart issues.
+
+I should present each effect concisely. The answer should mention immune function, memory consolidation, hormone regulation with examples, tissue repair, and cardiovascular health. Make sure to state that adequate sleep is necessary for these functions and thus essential for overall health. Keep it clear and to the point, using the key points from the context without adding extra information.
+</think>
+
+Sleep affects health by:  
+1. Supporting immune function to fight infections.  
+2. Consolidating memories for learning and cognitive function.  
+3. Regulating hormones (e.g., cortisol for stress management, growth hormone for growth/repair).  
+4. Enabling tissue repair and recovery.  
+5. Maintaining cardiovascular health (e.g., reducing heart disease risk).  
+Adequate sleep is essential for overall physical and mental well-being.",0.9,1.0,0.9,1.128,418
+qwen3-32b,What is the difference between Type 1 and Type 2 diabetes?,"<think>
+Okay, let's see. The user is asking about the difference between Type 1 and Type 2 diabetes. The context provided says that Type 1 is an autoimmune disease where the immune system attacks insulin-producing beta cells. Type 2 is when cells become resistant to insulin, often linked to lifestyle factors.
+
+So, I need to highlight the key differences. First, the cause: autoimmunity vs. insulin resistance. Then, onset: Type 1 is usually rapid and often in children/young adults, Type 2 is gradual and more common in adults, though it can occur in kids now. Management also differs—Type 1 requires insulin, Type 2 can sometimes be managed with lifestyle changes or oral meds. I should mention the lifestyle factors for Type 2. Need to keep it concise, just the main points from the context. Make sure not to add any extra info not in the context. Let me check the context again to confirm I didn't miss anything. Yes, that's the main info. So structure it clearly pointing out the autoimmune vs. insulin resistance, and link lifestyle to Type 2. Keep it short and straightforward as per the user's instruction.
+</think>
+
+Type 1 diabetes is an autoimmune disorder where the immune system destroys insulin-producing beta cells, requiring insulin dependence. Type 2 diabetes involves insulin resistance, often linked to lifestyle factors, and may progress to beta-cell dysfunction.",0.9,1.0,0.8,0.724,366
+qwen3-32b,What is a CT scan used for?,"<think>
+Okay, the user is asking what a CT scan is used for. Let me check the provided context.
+
+The context says a CT scan uses X-rays and computer processing to create detailed cross-sectional images. It's useful for detecting tumors, internal injuries, infections, and vascular conditions. 
+
+So, I need to list those applications. Let me make sure I don't add anything outside the context. The answer should be concise, just the key points from the context. Maybe start by stating it's used for detecting those four things. Need to present it clearly and briefly.
+</think>
+
+A CT scan is used for detecting tumors, internal injuries, infections, and vascular conditions by creating detailed cross-sectional images of the body using X-rays and computer processing.",1.0,1.0,0.8,0.412,225
+qwen3-32b,What causes high cholesterol?,"<think>
+Okay, the user is asking, ""What causes high cholesterol?"" Let me look at the provided context to make sure I answer correctly.
+
+The context lists several factors: diet (saturated and trans fats), lack of physical activity, obesity, smoking, genetic predisposition, medical conditions, and medications. I need to include all these in my answer but keep it concise. 
+
+Wait, the user wants a short answer using only the given context. Let me check if there are other points. The context mentions a combination of these factors. Should I mention that it's a combination first? The answer example starts with that. Maybe structure it as the main point first, then list the causes.
+
+Let me verify each point again. Diet with saturated and trans fats, no exercise, obesity, smoking, genetics, medical conditions, medications. That's all. Avoid adding any extra info not in the context. Use bullet points or just list them? The example uses a colon and commas. The user example answer used colons and commas, so I can follow that style.
+
+Make sure to mention that these factors contribute, as the context says ""combination of diet (saturated and trans fats), lack of physical activity, obesity, smoking, genetic predisposition. Some medical conditions and medications also raise cholesterol."" So the main answer should list all these, making sure to separate the diet factors clearly with the type of fats mentioned. Also check for any typos. Alright, that should cover it.
+</think>
+
+High cholesterol is caused by diet (saturated and trans fats), lack of physical activity, obesity, smoking, genetic predisposition, and certain medical conditions or medications.",1.0,1.0,0.8,0.868,406
+qwen3-32b,What is the role of platelets in blood?,"<think>
+Okay, the user is asking about the role of platelets in blood. Let me look at the context provided.
+
+The context says that platelets are small blood cells that help form clots to stop bleeding. When a blood vessel is damaged, they aggregate and release chemicals for clotting. So the answer should include forming clots, stopping bleeding, aggregating at the injury site, and releasing chemicals for the clotting process.
+
+I need to make sure the answer is concise and only uses the given info. No extra info. Let me structure that. Start with their primary role in clot formation. Mention stopping bleeding. Then the process: aggregation at the site and releasing chemicals that trigger the clotting cascade. Make it a couple of sentences without fluff.
+</think>
+
+Platelets (thrombocytes) help stop bleeding by forming clots when blood vessels are damaged. They aggregate at the injury site and release chemicals that initiate the clotting cascade.",1.0,1.0,1.0,0.96,277
+qwen3-32b,What is Alzheimer's disease?,"<think>
+Okay, the user is asking for a concise answer based on the provided context. Let me look at the context again. It says Alzheimer's is a progressive neurodegenerative disorder that affects memory and cognitive function, characterized by amyloid plaques and neurofibrillary tangles.
+
+I need to make sure I include all the key points: it's a progressive neurodegenerative disorder, it destroys memory and cognitive functions, and the hallmarks are amyloid plaques and tangles. The user wants the answer only using the given context, no extra info. Let me check the wording to be concise. Maybe start with ""Alzheimer's disease is..."" and list the main features. Let me make sure not to add any other details. Yep, that should cover it.
+</think>
+
+Alzheimer's disease is a progressive neurodegenerative disorder that destroys memory and cognitive function, characterized by amyloid plaques and neurofibrillary tangles in the brain.",1.0,1.0,0.9,0.541,268
+qwen3-32b,What are probiotics?,"<think>
+Okay, the user is asking, ""What are probiotics?"" and I need to answer based on the provided context. Let me check the context first. The context says probiotics are live microorganisms, mainly bacteria, that provide health benefits when consumed in adequate amounts. They help gut microbiome balance, improve digestion, and boost immunity.
+
+So the answer should be concise and use the key points from the context. I should start by defining probiotics as live microorganisms, mainly bacteria. Then mention the benefits: supporting gut microbiome balance, aiding digestion, and enhancing immune function. Also, note that they must be consumed in adequate amounts for these benefits. Avoid adding any extra information not in the context. Make sure it's all in one clear, straightforward sentence or two.
+</think>
+
+Probiotics are live microorganisms (mainly bacteria) that, when consumed in adequate amounts, support gut microbiome balance, improve digestion, and enhance immune function.",1.0,1.0,0.9,0.534,266
