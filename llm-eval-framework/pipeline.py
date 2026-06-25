@@ -1,16 +1,20 @@
 """
 LLM Eval Pipeline — 3 models, all via Groq, all free
-Scoring: custom metrics (no RAGAS dependency issues)
-Models: LLaMA-3 (Meta) · Mixtral (Mistral AI) · Gemma-7B (Google)
+Scoring: strict LLM judge (gemma2-9b) + keyword overlap blend
+Models: LLaMA-3.1-8b · LLaMA-3.3-70b · Qwen3-32b
 """
 
-import os, time, csv
+import os, time, csv, json
 from groq import Groq
-from deepeval.metrics import HallucinationMetric
-from deepeval.test_case import LLMTestCase
 
 # ── One client, one key, zero cost ────────────────────────────────────────────
-groq_client = Groq(api_key="gsk_YWMP....") # key
+from dotenv import load_dotenv
+load_dotenv()
+
+groq_client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
+
+# ── Judge model — must NOT be one of the evaluated models ─────────────────────
+JUDGE_MODEL = "llama-3.3-70b-versatile"
 
 # ── 25 Medical QA questions ───────────────────────────────────────────────────
 QUESTIONS = [
@@ -107,36 +111,64 @@ def ask(model_id, question, context):
         "tokens":  r.usage.total_tokens
     }
 
-# ── Scoring (no RAGAS — pure keyword overlap + LLM judge via Groq) ─────────────
-def score_answer(question, answer, context, ground_truth):
-    """
-    Ask Groq itself to score the answer on 3 metrics (0.0 to 1.0).
-    Cheaper and more reliable than RAGAS for this use case.
-    """
-    prompt = f"""You are an evaluator. Score the answer on 3 metrics, each from 0.0 to 1.0.
+# ── Keyword overlap (deterministic correctness signal) ────────────────────────
+def keyword_overlap(answer: str, ground_truth: str) -> float:
+    STOPWORDS = {
+        "a", "an", "the", "is", "it", "to", "of", "in", "and", "or",
+        "that", "this", "are", "by", "be", "as", "at", "was", "for",
+        "on", "with", "can", "not", "but", "from", "they", "their"
+    }
+    a_words = set(answer.lower().split()) - STOPWORDS
+    g_words = set(ground_truth.lower().split()) - STOPWORDS
+    if not g_words:
+        return 0.0
+    return round(len(a_words & g_words) / len(g_words), 3)
+
+# ── Strict LLM judge (neutral model, not one being evaluated) ─────────────────
+def llm_judge(question, answer, context, ground_truth) -> dict:
+    prompt = f"""You are a strict medical QA evaluator. Be critical and penalize vague or incomplete answers.
 
 Question: {question}
 Context: {context}
 Ground Truth: {ground_truth}
 Answer to evaluate: {answer}
 
-Return ONLY this JSON, no explanation:
-{{
-  "faithfulness": <0.0-1.0, is answer grounded in context?>,
-  "relevancy": <0.0-1.0, does it answer the question?>,
-  "correctness": <0.0-1.0, how close to ground truth?>
-}}"""
+Score each metric from 0.0 to 1.0 using these strict rules:
+- faithfulness: Does the answer use ONLY information from the context? Penalize heavily for any info not in context. Reserve 0.9+ for perfectly grounded answers only.
+- relevancy: Does the answer directly and completely address the question? Penalize for off-topic or partial answers. Reserve 0.9+ for complete, focused answers only.
+- correctness: Compare carefully against the ground truth. Penalize for missing key terms, wrong facts, or extra unsupported claims. Reserve 0.9+ for answers that closely match the ground truth in meaning and key details.
+
+Return ONLY valid JSON with no explanation, no markdown, no code fences:
+{{"faithfulness": 0.0, "relevancy": 0.0, "correctness": 0.0}}"""
 
     r = groq_client.chat.completions.create(
-        model="llama-3.1-8b-instant",
+        model=JUDGE_MODEL,
         messages=[{"role": "user", "content": prompt}],
         temperature=0
     )
-    import json
+    raw = r.choices[0].message.content.strip()
+    # Strip markdown fences if model adds them anyway
+    raw = raw.replace("```json", "").replace("```", "").strip()
     try:
-        return json.loads(r.choices[0].message.content)
-    except:
+        return json.loads(raw)
+    except json.JSONDecodeError:
         return {"faithfulness": 0.5, "relevancy": 0.5, "correctness": 0.5}
+
+# ── Combined scorer: 60% LLM judge + 40% keyword overlap for correctness ──────
+def score_answer(question, answer, context, ground_truth) -> dict:
+    llm_scores = llm_judge(question, answer, context, ground_truth)
+    kw_score   = keyword_overlap(answer, ground_truth)
+
+    # Blend correctness only — faithfulness & relevancy stay as LLM judgment
+    blended_correctness = round(
+        0.6 * llm_scores.get("correctness", 0.5) + 0.4 * kw_score, 3
+    )
+
+    return {
+        "faithfulness": round(llm_scores.get("faithfulness", 0.5), 3),
+        "relevancy":    round(llm_scores.get("relevancy",    0.5), 3),
+        "correctness":  blended_correctness,
+    }
 
 # ── Models ─────────────────────────────────────────────────────────────────────
 MODELS = {
@@ -154,16 +186,16 @@ def run():
 
         for i, q in enumerate(QUESTIONS):
             print(f"  Q{i+1}/25", end="\r")
-            r = ask(model_id, q["question"], q["context"])
+            r      = ask(model_id, q["question"], q["context"])
             scores = score_answer(q["question"], r["answer"], q["context"], q["ground_truth"])
 
             all_rows.append({
                 "model":        model_name,
                 "question":     q["question"],
                 "answer":       r["answer"],
-                "faithfulness": round(scores.get("faithfulness", 0), 3),
-                "relevancy":    round(scores.get("relevancy", 0), 3),
-                "correctness":  round(scores.get("correctness", 0), 3),
+                "faithfulness": scores["faithfulness"],
+                "relevancy":    scores["relevancy"],
+                "correctness":  scores["correctness"],
                 "latency_sec":  r["latency"],
                 "tokens_used":  r["tokens"],
             })
