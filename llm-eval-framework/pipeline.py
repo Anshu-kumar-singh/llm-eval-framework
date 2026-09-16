@@ -1,7 +1,7 @@
 """
 LLM Eval Pipeline — 3 models, all via Groq, all free
-Scoring: strict LLM judge (gemma2-9b) + keyword overlap blend
-Models: LLaMA-3.1-8b · LLaMA-3.3-70b · Qwen3-32b
+Scoring: strict LLM judge (gpt-oss-120b) + keyword overlap blend
+Models: GPT-OSS-20B · GPT-OSS-120B · Qwen3.6-27B
 """
 
 import os, time, csv, json
@@ -14,7 +14,7 @@ load_dotenv()
 groq_client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
 
 # ── Judge model — must NOT be one of the evaluated models ─────────────────────
-JUDGE_MODEL = "llama-3.3-70b-versatile"
+JUDGE_MODEL = "openai/gpt-oss-120b"
 
 # ── 25 Medical QA questions ───────────────────────────────────────────────────
 QUESTIONS = [
@@ -172,9 +172,9 @@ def score_answer(question, answer, context, ground_truth) -> dict:
 
 # ── Models ─────────────────────────────────────────────────────────────────────
 MODELS = {
-    "llama-3.1-8b":  "llama-3.1-8b-instant",
-    "llama-3.3-70b": "llama-3.3-70b-versatile",
-    "qwen3-32b":     "qwen/qwen3-32b",
+    "gpt-oss-20b":   "openai/gpt-oss-20b",
+    "gpt-oss-120b":  "openai/gpt-oss-120b",
+    "qwen3.6-27b":   "qwen/qwen3.6-27b",
 }
 
 # ── Main pipeline ──────────────────────────────────────────────────────────────
