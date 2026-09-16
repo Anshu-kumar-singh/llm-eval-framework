@@ -9,7 +9,7 @@ import plotly.graph_objects as go
 
 st.set_page_config(page_title="LLM Eval Dashboard", layout="wide")
 st.title("🧪 LLM Evaluation Dashboard")
-st.caption("Medical QA · LLaMA-3 vs Mixtral vs Gemma-7B — all via Groq")
+st.caption("Medical QA · GPT-OSS-20B vs GPT-OSS-120B vs Qwen3.6-27B — all via Groq")
 
 @st.cache_data
 def load():
